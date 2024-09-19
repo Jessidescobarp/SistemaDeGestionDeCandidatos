@@ -28,7 +28,6 @@ namespace SistemaDeGestionDeCandidatos.Controllers
               return _context.Candidates != null ? 
                           View(await _context.Candidates.ToListAsync()) :
                           Problem("Entity set 'GestionCanditadosDbContext.Candidates'  is null.");
-
         }
 
         // GET: Candidates/Details/5
@@ -55,29 +54,48 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             return View();
         }
 
-        // POST: Candidates/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+         /// <summary>
+         /// Metodo para crear un nuevo candidato
+         /// </summary>
+         /// <param name="candidates"></param>
+         /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdCandidate,Name,Surname,Birthdate,Email,InsertDate,ModifyDate")] Candidates candidates)
         {
-            if (ModelState.IsValid)
+            try
             {
-                // Validar que el candidato no exista
-                if (await _validationService.ValidateCandidateExists(candidates.Email))
+                if (ModelState.IsValid)
                 {
-                    ModelState.AddModelError("IdCandidate", "El candidato ya existe.");
-                    return View(candidates);
-                }
+                    bool exists = await _validationService.ValidateCandidateExists(candidates.Email);
+                    if (exists) {
+                        throw new Exception("El candidato a crear ya esta registrado con el Email "+ candidates.Email);
+                    
+                    }
 
-                candidates.InsertDate = DateTime.Now;                
-                _context.Add(candidates);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                    candidates.InsertDate = DateTime.Now;
+                
+                    _context.Add(candidates);
+                    
+                    await _context.SaveChangesAsync();
+                   
+                    return RedirectToAction(nameof(Index));
+                }
             }
+            catch (DbUpdateException dbEx)
+            {                
+                ModelState.AddModelError("", "No se pudo guardar los cambios en la base de datos. Intente nuevamente.");
+
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("",ex.Message);   
+            }
+
+            // Si llegamos aquí, algo salió mal, volvemos a mostrar la vista con los datos del candidato
             return View(candidates);
         }
+
 
         // GET: Candidates/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -86,8 +104,10 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             {
                 return NotFound();
             }
-
+            
             var candidates = await _context.Candidates.FindAsync(id);
+
+
             if (candidates == null)
             {
                 return NotFound();
@@ -111,6 +131,10 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             {
                 try
                 {
+                    var existingCandidate = await _context.Candidates.AsNoTracking().FirstOrDefaultAsync(c => c.IdCandidate == id);
+                    candidates.InsertDate = existingCandidate.InsertDate;
+                    candidates.ModifyDate = DateTime.Now;
+
                     _context.Update(candidates);
                     await _context.SaveChangesAsync();
                 }

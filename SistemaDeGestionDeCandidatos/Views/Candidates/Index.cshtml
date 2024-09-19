@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<SistemaDeGestionDeCandidatos.Models.Candidates>
 
 @{
-    ViewData["Title"] = "LIsta de candidatos";
+    ViewData["Title"] = "Index";
 }
 
 <h1>Index</h1>
@@ -43,7 +43,7 @@
                 @Html.DisplayFor(modelItem => item.Surname)
             </td>
             <td>
-                @item.Birthdate.ToString("dd/MM/yyyy")
+                 @Html.DisplayFor(modelItem => item.Birthdate)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
@@ -55,11 +55,52 @@
                 @Html.DisplayFor(modelItem => item.ModifyDate)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCandidate">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCandidate">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCandidate">Delete</a>
+                    <button class="btn btn-primary" onclick="location.href='@Url.Action("Edit", new { id = item.IdCandidate })'">Editar</button> |                    
+                    <button class="btn btn-danger" onclick="if(confirm('¿Estás seguro de que quieres eliminar este candidato?')) { location.href='@Url.Action("Delete", new { id = item.IdCandidate })' }">Elliminar</button>
             </td>
+                <td>
+                    <!-- Botón para abrir el modal -->
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addExperienceModal" data-candidate-id="@item.IdCandidate">
+                        Agregar Experiencia
+                    </button>
+                </td>
         </tr>
 }
     </tbody>
 </table>
+<!-- Modal -->
+<div class="modal fade" id="addExperienceModal" tabindex="-1" role="dialog" aria-labelledby="addExperienceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addExperienceModalLabel">Agregar Experiencia</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Aquí se cargará el formulario parcial -->
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#addExperienceModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Botón que abrió el modal
+            var candidateId = button.data('candidate-id'); // Extraer el ID del candidato
+            var modal = $(this);
+
+            // Cargar el formulario usando AJAX
+            $.get('@Url.Action("CreateForCandidate", "CandidateExperiences")', { candidateId: candidateId })
+                .done(function (data) {
+                    modal.find('#modalContent').html(data);
+                })
+                .fail(function () {
+                    modal.find('#modalContent').html("<p>Error al cargar el formulario.</p>");
+                });
+        });
+    });
+</script>

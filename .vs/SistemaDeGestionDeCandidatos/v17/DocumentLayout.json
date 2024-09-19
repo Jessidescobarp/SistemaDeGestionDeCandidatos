@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\controllers\\candidatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\controllers\\candidatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\services\\candidatevalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\services\\candidatevalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\services\\icandidatevalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\services\\icandidatevalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICandidateValidationService.cs",
+              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Services\\ICandidateValidationService.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Services\\ICandidateValidationService.cs",
+              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Services\\ICandidateValidationService.cs",
+              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Services\\ICandidateValidationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T23:20:01.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CandidatesController.cs",
+              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Controllers\\CandidatesController.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Controllers\\CandidatesController.cs",
+              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Controllers\\CandidatesController.cs",
+              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Controllers\\CandidatesController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAADwv1sAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T23:15:07.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CandidateValidationService.cs",
+              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Services\\CandidateValidationService.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Services\\CandidateValidationService.cs",
+              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Services\\CandidateValidationService.cs",
+              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Services\\CandidateValidationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T23:14:49.779Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

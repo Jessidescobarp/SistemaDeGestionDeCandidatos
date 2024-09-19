@@ -17,7 +17,7 @@ namespace SistemaDeGestionDeCandidatos.Models
         [EmailAddress]  
         public string Email { get; set; }
 
-        public DateTime? InsertDate { get; set; }
+        public DateTime InsertDate { get; set; }
 
         public DateTime? ModifyDate { get; set; }
 

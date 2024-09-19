@@ -15,10 +15,18 @@ namespace SistemaDeGestionDeCandidatos.Models
         public string? Job { get; set; }
         public string? Description { get; set; }
         public decimal Salary { get; set; }
-        public DateOnly BeginDate { get; set; }
-        public DateTime EndDate { get; set; }
-        public DateTime InsertDate { get; set; }
-        public DateTime ModifyDate { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime? BeginDate { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime? EndDate { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime? InsertDate { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime? ModifyDate { get; set; }
     }
 
 }

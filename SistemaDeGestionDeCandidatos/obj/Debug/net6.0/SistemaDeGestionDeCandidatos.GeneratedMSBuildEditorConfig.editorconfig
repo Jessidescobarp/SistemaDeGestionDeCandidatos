@@ -18,6 +18,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/CandidateExperiences/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlRXhwZXJpZW5jZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/CandidateExperiences/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlRXhwZXJpZW5jZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/CandidateExperiences/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlRXhwZXJpZW5jZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/CandidateExperiences/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlRXhwZXJpZW5jZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/CandidateExperiences/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlRXhwZXJpZW5jZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/CandidateExperiences/_CreateForCandidate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlRXhwZXJpZW5jZXNcX0NyZWF0ZUZvckNhbmRpZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/Candidates/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

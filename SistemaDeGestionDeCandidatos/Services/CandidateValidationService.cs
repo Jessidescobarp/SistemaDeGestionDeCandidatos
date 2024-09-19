@@ -14,7 +14,7 @@ namespace SistemaDeGestionDeCandidatos.Services
         }
 
         public async Task<bool> ValidateCandidateExists(string email)
-        {
+        {            
             return await _context.Candidates.AnyAsync(c => c.Email == email);
         }
 
@@ -22,5 +22,7 @@ namespace SistemaDeGestionDeCandidatos.Services
         {            
             return birthdate <= DateTime.Now;
         }
+
+
     }
 }
