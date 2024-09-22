@@ -18,4 +18,11 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.17" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaDeGestionDeCandidatos.Commands\SistemaDeGestionDeCandidatos.Commands.csproj" />
+    <ProjectReference Include="..\SistemaDeGestionDeCandidatos.Data\SistemaDeGestionDeCandidatos.Data.csproj" />
+    <ProjectReference Include="..\SistemaDeGestionDeCandidatos.Queries\SistemaDeGestionDeCandidatos.Queries.csproj" />
+    <ProjectReference Include="..\SistemaDeGestionDeCandidatos.Services\SistemaDeGestionDeCandidatos.Services.csproj" />
+  </ItemGroup>
+
 </Project>

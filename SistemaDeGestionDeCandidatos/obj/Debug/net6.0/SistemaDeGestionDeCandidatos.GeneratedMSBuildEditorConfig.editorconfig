@@ -46,20 +46,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/Candidates/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlc1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/Candidates/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/Candidates/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/Candidates/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/Candidates/_CreateForCandidate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlc1xfQ3JlYXRlRm9yQ2FuZGlkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jessid.Escobar/source/repos/Jessidescobarp/SistemaDeGestionDeCandidatos/SistemaDeGestionDeCandidatos/Views/Shared/Error.cshtml]

@@ -1,51 +1,66 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using SistemaDeGestionDeCandidatos.Commands.Commads;
 using SistemaDeGestionDeCandidatos.Context;
 using SistemaDeGestionDeCandidatos.Models;
+using SistemaDeGestionDeCandidatos.Queries.Queries.CandidatesQuery;
 using SistemaDeGestionDeCandidatos.Services;
+
 
 namespace SistemaDeGestionDeCandidatos.Controllers
 {
     public class CandidatesController : Controller
     {
-        private readonly GestionCanditadosDbContext _context;
         private readonly ICandidateValidationService _validationService;
+        private readonly GestionCanditadosDbContext _context;
+        private readonly CreateCandidateCommandHandler _createCandidate;
+        private readonly GetCandidatesQueryHandler _getCandidates;
+        private readonly DeleteCandidateCommandHandler _deleteCandidate;
+        private readonly EditCandidateCommandHandler _editCandidate;
+        private readonly GetExperienciesCandidateQueryHandler _getCandidateExperiencies;
 
-        public CandidatesController(ICandidateValidationService validationService, GestionCanditadosDbContext context)
+
+        public CandidatesController(ICandidateValidationService validationService, 
+            GestionCanditadosDbContext context,
+            CreateCandidateCommandHandler createCandidate,
+            GetCandidatesQueryHandler getCandidates,
+            DeleteCandidateCommandHandler DeleteCandidate,
+            EditCandidateCommandHandler EditCandidate,
+            GetExperienciesCandidateQueryHandler getCandidateExperiencies)
         {
             _validationService = validationService ?? throw new ArgumentNullException(nameof(validationService));
             _context = context;
+            _createCandidate = createCandidate;
+            _getCandidates = getCandidates;
+            _deleteCandidate = DeleteCandidate;
+            _editCandidate = EditCandidate;
+            _getCandidateExperiencies = getCandidateExperiencies;
+            
         }
 
         // GET: Candidates
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchTerm)
         {
-              return _context.Candidates != null ? 
-                          View(await _context.Candidates.ToListAsync()) :
-                          Problem("Entity set 'GestionCanditadosDbContext.Candidates'  is null.");
-        }
-
-        // GET: Candidates/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.Candidates == null)
+            try 
             {
-                return NotFound();
+                var query = new GetCandidatesQuery { SearchTerm = searchTerm };
+                var candidates = await _getCandidates.Handle(query);
+                return View(candidates);
+
+            }
+            catch (DbUpdateException dbEx)
+            {
+                ModelState.AddModelError("", "No se pudo listar los candidatos intente más tarde. Intente nuevamente.");
+                return View();
+
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return View();
             }
 
-            var candidates = await _context.Candidates
-                .FirstOrDefaultAsync(m => m.IdCandidate == id);
-            if (candidates == null)
-            {
-                return NotFound();
-            }
-
-            return View(candidates);
         }
 
         // GET: Candidates/Create
@@ -61,24 +76,23 @@ namespace SistemaDeGestionDeCandidatos.Controllers
          /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdCandidate,Name,Surname,Birthdate,Email,InsertDate,ModifyDate")] Candidates candidates)
+        public async Task<IActionResult> Create(CreateCandidateCommand command)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    bool exists = await _validationService.ValidateCandidateExists(candidates.Email);
-                    if (exists) {
-                        throw new Exception("El candidato a crear ya esta registrado con el Email "+ candidates.Email);
-                    
-                    }
+                    var candidates = new Candidates
+                    {
+                        Name = command.Name,
+                        Surname = command.Surname,
+                        Birthdate = command.Birthdate,
+                        Email = command.Email
+                    };
+                    await _validationService.ValidateCandidate(candidates);
 
-                    candidates.InsertDate = DateTime.Now;
-                
-                    _context.Add(candidates);
-                    
-                    await _context.SaveChangesAsync();
-                   
+                    await _createCandidate.Handle(command);
+
                     return RedirectToAction(nameof(Index));
                 }
             }
@@ -93,7 +107,7 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             }
 
             // Si llegamos aquí, algo salió mal, volvemos a mostrar la vista con los datos del candidato
-            return View(candidates);
+            return View();
         }
 
 
@@ -120,75 +134,81 @@ namespace SistemaDeGestionDeCandidatos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdCandidate,Name,Surname,Birthdate,Email,InsertDate,ModifyDate")] Candidates candidates)
+        public async Task<IActionResult> Edit(EditCandidateCommand command)
         {
-            if (id != candidates.IdCandidate)
-            {
-                return NotFound();
-            }
 
-            if (ModelState.IsValid)
+            var candidate = new Candidates
             {
-                try
-                {
-                    var existingCandidate = await _context.Candidates.AsNoTracking().FirstOrDefaultAsync(c => c.IdCandidate == id);
-                    candidates.InsertDate = existingCandidate.InsertDate;
-                    candidates.ModifyDate = DateTime.Now;
+                IdCandidate = command.IdCandidate,
+                Name = command.Name,
+                Surname = command.Surname,
+                Email = command.Email,
+                Birthdate = command.Birthdate,
+                ModifyDate = DateTime.Now
+            };
 
-                    _context.Update(candidates);
-                    await _context.SaveChangesAsync();
+            try
+            {
+                if (ModelState.IsValid)
+                {               
+                    await _validationService.ValidateCandidate(candidate);             
+                    await _editCandidate.Handle(command);
+                    return RedirectToAction(nameof(Index));
                 }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CandidatesExists(candidates.IdCandidate))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
             }
-            return View(candidates);
-        }
-
-        // GET: Candidates/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null || _context.Candidates == null)
+            catch (DbUpdateException dbEx)
             {
-                return NotFound();
+                ModelState.AddModelError("", "No se pudo guardar los cambios en la base de datos. Intente nuevamente.");
             }
-
-            var candidates = await _context.Candidates
-                .FirstOrDefaultAsync(m => m.IdCandidate == id);
-            if (candidates == null)
+            catch (Exception ex)
             {
-                return NotFound();
+                ModelState.AddModelError("", ex.Message);
             }
 
-            return View(candidates);
+            return View(candidate);
         }
+           
+        
+        
 
         // POST: Candidates/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (_context.Candidates == null)
+            try
             {
-                return Problem("Entity set 'GestionCanditadosDbContext.Candidates'  is null.");
+
+                var query = new GetExperienciesCandidateQuery { IdCandidate = id };
+                var experiences = await _getCandidateExperiencies.ListExperencies(query);
+                if (experiences != null) {
+                    TempData["HasExperiences"] = true;
+                    TempData["CandidateId"] = id;
+                    TempData["ExperiencesCount"] = experiences.Count;
+                    return RedirectToAction(nameof(ConfirmDelete));
+                }
+
+                var command = new DeleteCandidateCommand { IdCandidate = id }; 
+                await _deleteCandidate.Handle(command);
             }
-            var candidates = await _context.Candidates.FindAsync(id);
-            if (candidates != null)
+            catch (Exception ex)
             {
-                _context.Candidates.Remove(candidates);
+                ModelState.AddModelError("", ex.Message);
+                return View("Index", await _getCandidates.Handle(new GetCandidatesQuery())); 
             }
-            
-            await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult ConfirmDelete()
+        {
+            var candidateId = TempData["CandidateId"];
+            var experiencesCount = TempData["ExperiencesCount"];
+
+            ViewBag.CandidateId = candidateId;
+            ViewBag.ExperiencesCount = experiencesCount;
+
+            return View();
         }
 
         private bool CandidatesExists(int id)

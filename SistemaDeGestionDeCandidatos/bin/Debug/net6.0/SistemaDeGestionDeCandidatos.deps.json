@@ -13,7 +13,11 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.33",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.33",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.17"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.17",
+          "SistemaDeGestionDeCandidatos.Commands": "1.0.0",
+          "SistemaDeGestionDeCandidatos.Data": "1.0.0",
+          "SistemaDeGestionDeCandidatos.Queries": "1.0.0",
+          "SistemaDeGestionDeCandidatos.Services": "1.0.0"
         },
         "runtime": {
           "SistemaDeGestionDeCandidatos.dll": {}
@@ -2624,6 +2628,39 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "SistemaDeGestionDeCandidatos.Commands/1.0.0": {
+        "dependencies": {
+          "SistemaDeGestionDeCandidatos.Data": "1.0.0"
+        },
+        "runtime": {
+          "SistemaDeGestionDeCandidatos.Commands.dll": {}
+        }
+      },
+      "SistemaDeGestionDeCandidatos.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.33"
+        },
+        "runtime": {
+          "SistemaDeGestionDeCandidatos.Data.dll": {}
+        }
+      },
+      "SistemaDeGestionDeCandidatos.Queries/1.0.0": {
+        "dependencies": {
+          "SistemaDeGestionDeCandidatos.Data": "1.0.0"
+        },
+        "runtime": {
+          "SistemaDeGestionDeCandidatos.Queries.dll": {}
+        }
+      },
+      "SistemaDeGestionDeCandidatos.Services/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.33",
+          "SistemaDeGestionDeCandidatos.Data": "1.0.0"
+        },
+        "runtime": {
+          "SistemaDeGestionDeCandidatos.Services.dll": {}
+        }
       }
     }
   },
@@ -4165,6 +4202,26 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "SistemaDeGestionDeCandidatos.Commands/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SistemaDeGestionDeCandidatos.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SistemaDeGestionDeCandidatos.Queries/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SistemaDeGestionDeCandidatos.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

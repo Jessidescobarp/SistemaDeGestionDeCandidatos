@@ -1,0 +1,16 @@
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\bin\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.deps.json
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\bin\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.dll
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\bin\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.pdb
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\bin\Debug\net6.0\SistemaDeGestionDeCandidatos.Data.dll
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\bin\Debug\net6.0\SistemaDeGestionDeCandidatos.Data.pdb
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.csproj.AssemblyReference.cache
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.AssemblyInfoInputs.cache
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.AssemblyInfo.cs
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.csproj.CoreCompileInputs.cache
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.sourcelink.json
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\SistemaD.D202B8B6.Up2Date
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.dll
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\refint\SistemaDeGestionDeCandidatos.Services.dll
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\SistemaDeGestionDeCandidatos.Services.pdb
+C:\Users\Jessid.Escobar\source\repos\Jessidescobarp\SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.Services\obj\Debug\net6.0\ref\SistemaDeGestionDeCandidatos.Services.dll

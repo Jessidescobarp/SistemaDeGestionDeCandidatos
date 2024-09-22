@@ -3826,6 +3826,59 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "SistemaDeGestionDeCandidatos.Commands/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SistemaDeGestionDeCandidatos.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaDeGestionDeCandidatos.Commands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaDeGestionDeCandidatos.Commands.dll": {}
+        }
+      },
+      "SistemaDeGestionDeCandidatos.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.33"
+        },
+        "compile": {
+          "bin/placeholder/SistemaDeGestionDeCandidatos.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaDeGestionDeCandidatos.Data.dll": {}
+        }
+      },
+      "SistemaDeGestionDeCandidatos.Queries/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SistemaDeGestionDeCandidatos.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaDeGestionDeCandidatos.Queries.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaDeGestionDeCandidatos.Queries.dll": {}
+        }
+      },
+      "SistemaDeGestionDeCandidatos.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.33",
+          "SistemaDeGestionDeCandidatos.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaDeGestionDeCandidatos.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaDeGestionDeCandidatos.Services.dll": {}
+        }
       }
     }
   },
@@ -10831,6 +10884,26 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "SistemaDeGestionDeCandidatos.Commands/1.0.0": {
+      "type": "project",
+      "path": "../SistemaDeGestionDeCandidatos.Commands/SistemaDeGestionDeCandidatos.Commands.csproj",
+      "msbuildProject": "../SistemaDeGestionDeCandidatos.Commands/SistemaDeGestionDeCandidatos.Commands.csproj"
+    },
+    "SistemaDeGestionDeCandidatos.Data/1.0.0": {
+      "type": "project",
+      "path": "../SistemaDeGestionDeCandidatos.Data/SistemaDeGestionDeCandidatos.Data.csproj",
+      "msbuildProject": "../SistemaDeGestionDeCandidatos.Data/SistemaDeGestionDeCandidatos.Data.csproj"
+    },
+    "SistemaDeGestionDeCandidatos.Queries/1.0.0": {
+      "type": "project",
+      "path": "../SistemaDeGestionDeCandidatos.Queries/SistemaDeGestionDeCandidatos.Queries.csproj",
+      "msbuildProject": "../SistemaDeGestionDeCandidatos.Queries/SistemaDeGestionDeCandidatos.Queries.csproj"
+    },
+    "SistemaDeGestionDeCandidatos.Services/1.0.0": {
+      "type": "project",
+      "path": "../SistemaDeGestionDeCandidatos.Services/SistemaDeGestionDeCandidatos.Services.csproj",
+      "msbuildProject": "../SistemaDeGestionDeCandidatos.Services/SistemaDeGestionDeCandidatos.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10840,7 +10913,11 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.33",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.33",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.33",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.17"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.17",
+      "SistemaDeGestionDeCandidatos.Commands >= 1.0.0",
+      "SistemaDeGestionDeCandidatos.Data >= 1.0.0",
+      "SistemaDeGestionDeCandidatos.Queries >= 1.0.0",
+      "SistemaDeGestionDeCandidatos.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10875,7 +10952,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj": {
+              "projectPath": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj"
+            },
+            "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Data\\SistemaDeGestionDeCandidatos.Data.csproj": {
+              "projectPath": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Data\\SistemaDeGestionDeCandidatos.Data.csproj"
+            },
+            "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Queries\\SistemaDeGestionDeCandidatos.Queries.csproj": {
+              "projectPath": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Queries\\SistemaDeGestionDeCandidatos.Queries.csproj"
+            },
+            "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Services\\SistemaDeGestionDeCandidatos.Services.csproj": {
+              "projectPath": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Services\\SistemaDeGestionDeCandidatos.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

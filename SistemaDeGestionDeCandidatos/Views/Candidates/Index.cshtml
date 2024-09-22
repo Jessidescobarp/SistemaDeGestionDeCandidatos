@@ -1,13 +1,21 @@
 ﻿@model IEnumerable<SistemaDeGestionDeCandidatos.Models.Candidates>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Listado de candidatos";
 }
 
-<h1>Index</h1>
+<h1>Lista de candidatos</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Registrar un nuevo candidato</a>
+</p>
+
+<p>
+    <form method="get" asp-action="Index">
+        <input type="text" name="searchTerm" placeholder="Buscar..." value="@ViewData["SearchTerm"]" />
+        <input type="submit" value="Buscar" class="btn btn-primary" />
+        <button id="clearFilter" class="btn btn-secondary">Limpiar Filtro</button>
+    </form>
 </p>
 <table class="table">
     <thead>
@@ -55,8 +63,10 @@
                 @Html.DisplayFor(modelItem => item.ModifyDate)
             </td>
             <td>
-                    <button class="btn btn-primary" onclick="location.href='@Url.Action("Edit", new { id = item.IdCandidate })'">Editar</button> |                    
-                    <button class="btn btn-danger" onclick="if(confirm('¿Estás seguro de que quieres eliminar este candidato?')) { location.href='@Url.Action("Delete", new { id = item.IdCandidate })' }">Elliminar</button>
+                    <button class="btn btn-primary" onclick="location.href='@Url.Action("Edit", new { id = item.IdCandidate })'">Editar</button> |
+                    <form asp-action="Delete" asp-route-id="@item.IdCandidate" method="post" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este candidato?');">
+                        <input type="submit" value="Delete" class="btn btn-danger" />
+                    </form>
             </td>
                 <td>
                     <!-- Botón para abrir el modal -->
@@ -68,7 +78,7 @@
 }
     </tbody>
 </table>
-<!-- Modal -->
+
 <div class="modal fade" id="addExperienceModal" tabindex="-1" role="dialog" aria-labelledby="addExperienceModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -79,7 +89,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <!-- Aquí se cargará el formulario parcial -->
+               
                 <div id="modalContent"></div>
             </div>
         </div>
@@ -103,4 +113,15 @@
                 });
         });
     });
+
+    document.getElementById("clearFilter").addEventListener("click", function () {
+        // Limpia el campo de búsqueda
+        document.getElementById("searchTerm").value = '';
+
+        // Opcional: Redirigir para recargar la lista de candidatos
+        window.location.href = '@Url.Action("Index", "Candidates")';
+    });
+ 
+  
+
 </script>

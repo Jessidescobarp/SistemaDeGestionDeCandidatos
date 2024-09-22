@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using SistemaDeGestionDeCandidatos.Commands.Commads;
 using SistemaDeGestionDeCandidatos.Context;
 using SistemaDeGestionDeCandidatos.Models;
-using SistemaDeGestionDeCandidatos.Services; 
+using SistemaDeGestionDeCandidatos.Queries.Queries.CandidatesQuery;
+using SistemaDeGestionDeCandidatos.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,11 +12,21 @@ builder.Services.AddControllersWithViews();
 
 // Configuración para SQL Express (LocalDB)
 builder.Services.AddDbContext<GestionCanditadosDbContext>(options =>
-     options.UseInMemoryDatabase("RecruitmentDB"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+//// Configuración para SQL in-memory 
+//builder.Services.AddDbContext<GestionCanditadosDbContext>(options =>
+//     options.UseInMemoryDatabase("GestionCanditadosDb"));
 
 
 // Configura la inyección de dependencias para el servicio de validación
 builder.Services.AddScoped<ICandidateValidationService, CandidateValidationService>();
+builder.Services.AddScoped<GetCandidatesQueryHandler>();
+builder.Services.AddScoped<CreateCandidateCommandHandler>();
+builder.Services.AddScoped<DeleteCandidateCommandHandler>();
+builder.Services.AddScoped<EditCandidateCommandHandler>();
+builder.Services.AddScoped<GetExperienciesCandidateQueryHandler>();
 
 var app = builder.Build();
 
