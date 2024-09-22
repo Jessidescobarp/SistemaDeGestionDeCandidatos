@@ -10,6 +10,9 @@
     <thead>
         <tr>
             <th>
+                Id Candidate Experinces
+            </th>
+            <th>
                Id Candidate
             </th>
             <th>
@@ -45,6 +48,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdCandidateExperience)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Candidate.IdCandidate)
             </td>

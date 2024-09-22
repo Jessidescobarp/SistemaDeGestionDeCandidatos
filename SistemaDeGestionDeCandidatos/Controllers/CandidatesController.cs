@@ -39,7 +39,12 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             
         }
 
-        // GET: Candidates
+        /// <summary>
+        /// Controlador para obtener todos los canditados también se pude filtrar
+   
+        /// </summary>
+        /// <param name="searchTerm">Nombre,aperllido, email</param>
+        /// <returns> a la vista index con todos los candidatos o el filtro</returns>
         public async Task<IActionResult> Index(string searchTerm)
         {
             try 
@@ -63,14 +68,17 @@ namespace SistemaDeGestionDeCandidatos.Controllers
 
         }
 
-        // GET: Candidates/Create
+       /// <summary>
+       /// Controlador para mostrar crear un candidato
+       /// </summary>
+       /// <returns>vista</returns>
         public IActionResult Create()
         {
             return View();
         }
 
          /// <summary>
-         /// Metodo para crear un nuevo candidato
+         /// Controlador para crear un nuevo candidato
          /// </summary>
          /// <param name="candidates"></param>
          /// <returns></returns>
@@ -111,7 +119,11 @@ namespace SistemaDeGestionDeCandidatos.Controllers
         }
 
 
-        // GET: Candidates/Edit/5
+        /// <summary>
+        /// Controlador mostra el canditado a editar
+        /// </summary>
+        /// <param name="id"> id del candidato</param>
+        /// <returns></returns>
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Candidates == null)
@@ -129,9 +141,11 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             return View(candidates);
         }
 
-        // POST: Candidates/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        /// <summary>
+        /// Controlador para editar un candidato
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(EditCandidateCommand command)
@@ -171,7 +185,11 @@ namespace SistemaDeGestionDeCandidatos.Controllers
         
         
 
-        // POST: Candidates/Delete/5
+         /// <summary>
+         /// Controlador para eliminar un candidato, tiene validadción si el candidato tiene experiencias
+         /// </summary>
+         /// <param name="id"></param>
+         /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
@@ -199,7 +217,10 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             }
 
         }
-
+        /// <summary>
+        /// Controlador para validar confirmación eliminar un usuario
+        /// </summary>
+        /// <returns></returns>
         public IActionResult ConfirmDelete()
         {
             var candidateId = TempData["CandidateId"];
@@ -210,6 +231,11 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Controlador para confirmar si un candidato tiene experiencias
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmedWithExperiences(int id)

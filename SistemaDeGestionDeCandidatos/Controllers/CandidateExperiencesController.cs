@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using SistemaDeGestionDeCandidatos.Context;
 using SistemaDeGestionDeCandidatos.Models;
 using SistemaDeGestionDeCandidatos.Queries.Queries.CandidateExperiencesQuery;
+using SistemaDeGestionDeCandidatos.Commands.Commads.CommandsCandidateExperiences;
 
 namespace SistemaDeGestionDeCandidatos.Controllers
 {
@@ -15,16 +16,26 @@ namespace SistemaDeGestionDeCandidatos.Controllers
     {
         private readonly GestionCanditadosDbContext _context;
         private readonly GetExperienciesCandidatesHandler _getExperienciesCandidate;
+        private readonly EditCandidateExperienceCommandHandler _editExperienciesCandidates;
+        private readonly CreateCandidateExperienceCommandHandler _createExperienciesCandidates;
 
         public CandidateExperiencesController(
             GestionCanditadosDbContext context,
-            GetExperienciesCandidatesHandler getExperienciesCandidate)
+            GetExperienciesCandidatesHandler getExperienciesCandidate,
+            EditCandidateExperienceCommandHandler editCandidateExperience,
+            CreateCandidateExperienceCommandHandler createExperienciesCandidates
+            )
         {
             _context = context;
             _getExperienciesCandidate = getExperienciesCandidate;
+            _editExperienciesCandidates = editCandidateExperience;
+            _createExperienciesCandidates = createExperienciesCandidates;
         }
 
-        // GET: CandidateExperiences
+        /// <summary>
+        /// Controlador para obtener todas las experiencias
+        /// </summary>
+        /// <returns></returns>
         public async Task<IActionResult> Index()
         {
             try
@@ -40,7 +51,11 @@ namespace SistemaDeGestionDeCandidatos.Controllers
 
         }
 
-        // GET: CandidateExperiences/CreateForCandidate
+        /// <summary>
+        /// Controlador para crear la experiencia de candidato
+        /// </summary>
+        /// <param name="candidateId"></param>
+        /// <returns></returns>
         public IActionResult CreateForCandidate(int candidateId)
         {
             var experienceModel = new CandidateExperience
@@ -51,28 +66,64 @@ namespace SistemaDeGestionDeCandidatos.Controllers
         }
 
 
-        // GET: CandidateExperiences/Create
+        /// <summary>
+        /// Controlador para retoranan modal de crear un candidato en la visata Candidates
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Create()
         {
             ViewData["IdCandidate"] = new SelectList(_context.Candidates, "IdCandidate", "IdCandidate");
             return View();
         }
 
+        /// <summary>
+        /// Controlador para crear una Experiencia de canditado desde el modal de creación de experiencias de visat candidates
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdCandidateExperience,IdCandidate,Company,Job,Description,Salary,BeginDate,EndDate,InsertDate,ModifyDate")] CandidateExperience candidateExperience)
+        public async Task<IActionResult> Create(CreateCandidateExperienceCommand command)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(candidateExperience);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+            try { 
+                if (ModelState.IsValid)
+                {
+
+                    var candidateExperience = new CandidateExperience
+                    {
+                        IdCandidate= command.idCandidate,
+                        Company = command.Company,
+                        Job = command.job,
+                        Description = command.Description,
+                        BeginDate = command.BeginDate,
+                        EndDate = command.EndDate                        
+
+                    };             
+
+                    await _createExperienciesCandidates.CreateExperience(command);
+
+                    return RedirectToAction(nameof(Index));
+                    
+                }
             }
-            ViewData["IdCandidate"] = new SelectList(_context.Candidates, "IdCandidate", "IdCandidate", candidateExperience.IdCandidate);
-            return View(candidateExperience);
+            catch (DbUpdateException dbEx)
+            {
+                ModelState.AddModelError("", "No se pudo guardar los cambios en la base de datos. Intente nuevamente.");
+
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+            }
+
+            return RedirectToAction(nameof(Index));
         }
 
-        // GET: CandidateExperiences/Edit/5
+        /// <summary>
+        /// Controlador para mostrar datos del canditado a editar
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.CandidateExperience == null)
@@ -89,40 +140,50 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             return View(candidateExperience);
         }
 
+        /// <summary>
+        /// controladort para enviar datos a editar
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdCandidateExperience,IdCandidate,Company,Job,Description,Salary,BeginDate,EndDate,InsertDate,ModifyDate")] CandidateExperience candidateExperience)
+        public async Task<IActionResult> Edit(EditCandidateExperienceCommand command)
         {
-            if (id != candidateExperience.IdCandidateExperience)
+            var candidateExperience = new CandidateExperience
             {
-                return NotFound();
-            }
+                IdCandidateExperience = command.IdCandidateExperience,
+                Company = command.Company,
+                Job = command.job,
+                Description= command.Description,
+                BeginDate = command.BeginDate,
+                EndDate = command.EndDate,
+                ModifyDate = DateTime.Now
+            };
 
-            if (ModelState.IsValid)
-            {
                 try
-                {
-                    _context.Update(candidateExperience);
-                    await _context.SaveChangesAsync();
+                {          
+                    await _editExperienciesCandidates.EditExperience(command);
+                    return RedirectToAction(nameof(Index));
                 }
-                catch (DbUpdateConcurrencyException)
+            
+                catch (DbUpdateException dbEx)
                 {
-                    if (!CandidateExperienceExists(candidateExperience.IdCandidateExperience))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    ModelState.AddModelError("", "No se pudo guardar los cambios en la base de datos. Intente nuevamente.");
                 }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["IdCandidate"] = new SelectList(_context.Candidates, "IdCandidate", "IdCandidate", candidateExperience.IdCandidate);
-            return View(candidateExperience);
-        }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", ex.Message);
+                }
 
-        // GET: CandidateExperiences/Delete/5
+                return View(candidateExperience);
+         }
+
+        /// <summary>
+        /// Controlador para mostra datos de eliminar una experiencia
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.CandidateExperience == null)
@@ -141,7 +202,11 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             return View(candidateExperience);
         }
 
-        // POST: CandidateExperiences/Delete/5
+        /// <summary>
+        /// controlador eliminar una experiencia despues de confirmación del usuario
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

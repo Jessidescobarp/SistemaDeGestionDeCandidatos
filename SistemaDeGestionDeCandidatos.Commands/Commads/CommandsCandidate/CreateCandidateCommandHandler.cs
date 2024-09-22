@@ -9,13 +9,22 @@ namespace SistemaDeGestionDeCandidatos.Commands.Commads.CommandsCandidate
 
     public class CreateCandidateCommandHandler
     {
+  
         private readonly GestionCanditadosDbContext _context;
 
+        /// <summary>
+        /// Creacion del constructor, e inyección de dependecia GestionCanditadosDbContext
+        /// </summary>
         public CreateCandidateCommandHandler(GestionCanditadosDbContext context)
         {
             _context = context;
         }
 
+        /// <summary>
+        /// handler para crear un candidato
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
         public async Task Handle(CreateCandidateCommand command)
         {
             var candidate = new Candidates

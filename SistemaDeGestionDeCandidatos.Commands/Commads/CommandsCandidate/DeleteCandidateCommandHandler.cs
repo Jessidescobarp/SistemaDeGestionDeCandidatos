@@ -13,6 +13,12 @@ namespace SistemaDeGestionDeCandidatos.Commands.Commads.CommandsCandidate
             _context = context;
         }
 
+        /// <summary>
+        /// Handler para eliminar un candidato se valida la existencia de experiencias si las hay se espera confirmacion de eliminación
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public async Task Handle(DeleteCandidateCommand command)
         {
             // Obtener el candidato y sus experiencias

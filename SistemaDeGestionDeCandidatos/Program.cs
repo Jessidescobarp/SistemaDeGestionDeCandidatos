@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SistemaDeGestionDeCandidatos.Commands.Commads.CommandsCandidate;
+using SistemaDeGestionDeCandidatos.Commands.Commads.CommandsCandidateExperiences;
 using SistemaDeGestionDeCandidatos.Context;
 using SistemaDeGestionDeCandidatos.Models;
 using SistemaDeGestionDeCandidatos.Queries.Queries.CandidateExperiencesQuery;
@@ -29,6 +30,8 @@ builder.Services.AddScoped<DeleteCandidateCommandHandler>();
 builder.Services.AddScoped<EditCandidateCommandHandler>();
 builder.Services.AddScoped<GetExperienciesCandidateQueryHandler>();
 builder.Services.AddScoped<GetExperienciesCandidatesHandler>();
+builder.Services.AddScoped<EditCandidateExperienceCommandHandler>();
+builder.Services.AddScoped <CreateCandidateExperienceCommandHandler>();
 
 var app = builder.Build();
 
