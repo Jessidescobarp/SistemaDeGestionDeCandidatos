@@ -10,4 +10,8 @@
     <ProjectReference Include="..\SistemaDeGestionDeCandidatos.Data\SistemaDeGestionDeCandidatos.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Commads\CommandsCandidateExperiences\" />
+  </ItemGroup>
+
 </Project>

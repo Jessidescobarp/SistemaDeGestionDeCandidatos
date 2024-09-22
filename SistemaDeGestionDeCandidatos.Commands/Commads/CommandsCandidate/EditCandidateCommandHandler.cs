@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaDeGestionDeCandidatos.Commands.Commads
+namespace SistemaDeGestionDeCandidatos.Commands.Commads.CommandsCandidate
 {
     public class EditCandidateCommandHandler
     {

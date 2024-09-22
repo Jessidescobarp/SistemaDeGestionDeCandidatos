@@ -1,12 +1,12 @@
 ﻿@model SistemaDeGestionDeCandidatos.Models.CandidateExperience
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar candidato";
 }
 
-<h1>Edit</h1>
+<h1> Editar candidates</h1>
 
-<h4>CandidateExperience</h4>
+<h4>Candidates Experiences</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -15,7 +15,7 @@
             <input type="hidden" asp-for="IdCandidateExperience" />
             <div class="form-group">
                 <label asp-for="IdCandidate" class="control-label"></label>
-                <select asp-for="IdCandidate" class="form-control" asp-items="ViewBag.IdCandidate"></select>
+                <select asp-for="IdCandidate" class="form-control" asp-items="ViewBag.IdCandidate" disabled="disabled"></select>
                 <span asp-validation-for="IdCandidate" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -40,12 +40,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="BeginDate" class="control-label"></label>
-                <input asp-for="BeginDate" class="form-control" />
+                <input asp-for="BeginDate" class="form-control" type="date" value="@Model.BeginDate?.ToString("yyyy-MM-dd")" />
                 <span asp-validation-for="BeginDate" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EndDate" class="control-label"></label>
-                <input asp-for="EndDate" class="form-control" />
+                <input asp-for="EndDate" class="form-control" type="date" value="@Model.EndDate?.ToString("yyyy-MM-dd")" />
                 <span asp-validation-for="EndDate" class="text-danger"></span>
             </div>
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaDeGestionDeCandidatos.Commands")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12a39dde508ea945f028c7d8c062447da7e802d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7abfec6c6e57e9d0ba5e4c62e78237f65255fa76")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaDeGestionDeCandidatos.Commands")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaDeGestionDeCandidatos.Commands")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

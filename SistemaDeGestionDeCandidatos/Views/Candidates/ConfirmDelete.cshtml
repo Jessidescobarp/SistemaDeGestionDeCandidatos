@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Confirmar eliminación";
+}
+
+<h2>Confirmar eliminación</h2>
+
+<p>El candidato tiene @ViewBag.ExperiencesCount experiencias asociadas. Si eliminas al candidato, también se eliminarán sus experiencias.</p>
+
+<form asp-action="DeleteConfirmedWithExperiences" method="post">
+    <input type="hidden" name="id" value="@ViewBag.CandidateId" />
+    <input type="submit" value="Eliminar" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

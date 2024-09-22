@@ -3,7 +3,7 @@ using SistemaDeGestionDeCandidatos.Models;
 using System.Threading.Tasks;
 
 
-namespace SistemaDeGestionDeCandidatos.Commands.Commads
+namespace SistemaDeGestionDeCandidatos.Commands.Commads.CommandsCandidate
 {
 
 

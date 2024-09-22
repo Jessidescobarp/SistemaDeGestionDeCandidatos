@@ -10,7 +10,7 @@ namespace SistemaDeGestionDeCandidatos.Context
 
         // Se definen DbSets que estan en la base de datos
         public DbSet<Candidates> Candidates { get; set; } = null!;
-        public DbSet<CandidateExperience> Experiences { get; set; } = null!;
+        public DbSet<CandidateExperience> CandidateExperience { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

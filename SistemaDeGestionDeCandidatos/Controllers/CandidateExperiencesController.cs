@@ -7,23 +7,37 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SistemaDeGestionDeCandidatos.Context;
 using SistemaDeGestionDeCandidatos.Models;
+using SistemaDeGestionDeCandidatos.Queries.Queries.CandidateExperiencesQuery;
 
 namespace SistemaDeGestionDeCandidatos.Controllers
 {
     public class CandidateExperiencesController : Controller
     {
         private readonly GestionCanditadosDbContext _context;
+        private readonly GetExperienciesCandidatesHandler _getExperienciesCandidate;
 
-        public CandidateExperiencesController(GestionCanditadosDbContext context)
+        public CandidateExperiencesController(
+            GestionCanditadosDbContext context,
+            GetExperienciesCandidatesHandler getExperienciesCandidate)
         {
             _context = context;
+            _getExperienciesCandidate = getExperienciesCandidate;
         }
 
         // GET: CandidateExperiences
         public async Task<IActionResult> Index()
         {
-            var gestionCanditadosDbContext = _context.Experiences.Include(c => c.Candidate);
-            return View(await gestionCanditadosDbContext.ToListAsync());
+            try
+            {
+                await _getExperienciesCandidate.Handle();
+                var gestionCanditadosDbContext = _context.CandidateExperience.Include(c => c.Candidate);
+                return View(await gestionCanditadosDbContext.ToListAsync());
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+
         }
 
         // GET: CandidateExperiences/CreateForCandidate
@@ -37,25 +51,6 @@ namespace SistemaDeGestionDeCandidatos.Controllers
         }
 
 
-        // GET: CandidateExperiences/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.Experiences == null)
-            {
-                return NotFound();
-            }
-
-            var candidateExperience = await _context.Experiences
-                .Include(c => c.Candidate)
-                .FirstOrDefaultAsync(m => m.IdCandidateExperience == id);
-            if (candidateExperience == null)
-            {
-                return NotFound();
-            }
-
-            return View(candidateExperience);
-        }
-
         // GET: CandidateExperiences/Create
         public IActionResult Create()
         {
@@ -63,9 +58,6 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             return View();
         }
 
-        // POST: CandidateExperiences/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdCandidateExperience,IdCandidate,Company,Job,Description,Salary,BeginDate,EndDate,InsertDate,ModifyDate")] CandidateExperience candidateExperience)
@@ -83,12 +75,12 @@ namespace SistemaDeGestionDeCandidatos.Controllers
         // GET: CandidateExperiences/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Experiences == null)
+            if (id == null || _context.CandidateExperience == null)
             {
                 return NotFound();
             }
 
-            var candidateExperience = await _context.Experiences.FindAsync(id);
+            var candidateExperience = await _context.CandidateExperience.FindAsync(id);
             if (candidateExperience == null)
             {
                 return NotFound();
@@ -97,9 +89,6 @@ namespace SistemaDeGestionDeCandidatos.Controllers
             return View(candidateExperience);
         }
 
-        // POST: CandidateExperiences/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdCandidateExperience,IdCandidate,Company,Job,Description,Salary,BeginDate,EndDate,InsertDate,ModifyDate")] CandidateExperience candidateExperience)
@@ -136,12 +125,12 @@ namespace SistemaDeGestionDeCandidatos.Controllers
         // GET: CandidateExperiences/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Experiences == null)
+            if (id == null || _context.CandidateExperience == null)
             {
                 return NotFound();
             }
 
-            var candidateExperience = await _context.Experiences
+            var candidateExperience = await _context.CandidateExperience
                 .Include(c => c.Candidate)
                 .FirstOrDefaultAsync(m => m.IdCandidateExperience == id);
             if (candidateExperience == null)
@@ -157,14 +146,14 @@ namespace SistemaDeGestionDeCandidatos.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Experiences == null)
+            if (_context.CandidateExperience == null)
             {
                 return Problem("Entity set 'GestionCanditadosDbContext.Experiences'  is null.");
             }
-            var candidateExperience = await _context.Experiences.FindAsync(id);
+            var candidateExperience = await _context.CandidateExperience.FindAsync(id);
             if (candidateExperience != null)
             {
-                _context.Experiences.Remove(candidateExperience);
+                _context.CandidateExperience.Remove(candidateExperience);
             }
             
             await _context.SaveChangesAsync();
@@ -173,7 +162,7 @@ namespace SistemaDeGestionDeCandidatos.Controllers
 
         private bool CandidateExperienceExists(int id)
         {
-          return (_context.Experiences?.Any(e => e.IdCandidateExperience == id)).GetValueOrDefault();
+          return (_context.CandidateExperience?.Any(e => e.IdCandidateExperience == id)).GetValueOrDefault();
         }
     }
 }

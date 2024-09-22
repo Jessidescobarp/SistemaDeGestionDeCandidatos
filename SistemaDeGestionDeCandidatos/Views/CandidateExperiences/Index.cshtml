@@ -6,38 +6,38 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Candidate)
+               Id Candidate
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Company)
+               Candidate name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Job)
+                Company
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
+                Job
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Salary)
+                Description
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BeginDate)
+                Salary
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.EndDate)
+                BeginDate
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.InsertDate)
+               EndDate
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ModifyDate)
+                InsertDate
+            </th>
+            <th>                
+                ModifyDate
             </th>
             <th></th>
         </tr>
@@ -48,6 +48,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Candidate.IdCandidate)
             </td>
+            <td>
+                @Html.Raw(string.Format("{0} {1}", item.Candidate.Name, item.Candidate.Surname))
+            </td>
+
             <td>
                 @Html.DisplayFor(modelItem => item.Company)
             </td>
@@ -74,7 +78,6 @@
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IdCandidateExperience">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCandidateExperience">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.IdCandidateExperience">Delete</a>
             </td>
         </tr>

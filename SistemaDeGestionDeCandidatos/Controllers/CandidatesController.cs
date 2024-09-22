@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SistemaDeGestionDeCandidatos.Commands.Commads;
+using SistemaDeGestionDeCandidatos.Commands.Commads.CommandsCandidate;
 using SistemaDeGestionDeCandidatos.Context;
 using SistemaDeGestionDeCandidatos.Models;
 using SistemaDeGestionDeCandidatos.Queries.Queries.CandidatesQuery;
@@ -181,7 +181,7 @@ namespace SistemaDeGestionDeCandidatos.Controllers
 
                 var query = new GetExperienciesCandidateQuery { IdCandidate = id };
                 var experiences = await _getCandidateExperiencies.ListExperencies(query);
-                if (experiences != null) {
+                if ( experiences != null && experiences.Count!=0) {
                     TempData["HasExperiences"] = true;
                     TempData["CandidateId"] = id;
                     TempData["ExperiencesCount"] = experiences.Count;
@@ -190,6 +190,7 @@ namespace SistemaDeGestionDeCandidatos.Controllers
 
                 var command = new DeleteCandidateCommand { IdCandidate = id }; 
                 await _deleteCandidate.Handle(command);
+                return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
@@ -197,7 +198,6 @@ namespace SistemaDeGestionDeCandidatos.Controllers
                 return View("Index", await _getCandidates.Handle(new GetCandidatesQuery())); 
             }
 
-            return RedirectToAction(nameof(Index));
         }
 
         public IActionResult ConfirmDelete()
@@ -207,8 +207,26 @@ namespace SistemaDeGestionDeCandidatos.Controllers
 
             ViewBag.CandidateId = candidateId;
             ViewBag.ExperiencesCount = experiencesCount;
-
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmedWithExperiences(int id)
+        {
+            try
+            {
+                // Ejecutar el comando para eliminar al candidato y sus experiencias
+                var command = new DeleteCandidateCommand { IdCandidate = id, DeleteExperiences = true };
+                await _deleteCandidate.Handle(command);
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Ocurrió un error al intentar eliminar el candidato: " + ex.Message);
+                return RedirectToAction(nameof(Index));
+            }
         }
 
         private bool CandidatesExists(int id)
