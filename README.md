@@ -4,12 +4,12 @@
 El Sistema de Gestión de Candidatos es una aplicación web basada en arquitectura MVC con .NET Core y Entity Framework. La aplicación permite la administración de candidatos para un proceso selectivo, gestionando su información y las experiencias laborales asociadas.
 ## Estructura del Proyecto
 
-La estructura del proyecto está enfocado en multicapa con el fin de que puede ser escalable y de facil mantenimiento
-- **SistemaDeGestionDeCandidatos**: Proyecto principal que incluye la interfaz de usuario y la capa de presentación. aqui se utiliza la arquitectura MVC.
-- **SistemaDeGestionDeCandidatos.Commands**: Encargado de la lógica relacionada con los comandos del sistema (crear, actualizar, eliminar candidatos) utilizando arquitectura CQRS.
+La estructura del proyecto está enfocada en una arquitectura multicapa, con el objetivo de que sea escalable y fácil de mantener.
+- **SistemaDeGestionDeCandidatos**: Proyecto principal que incluye la interfaz de usuario y la capa de presentación, utilizando la arquitectura MVC (Modelo-Vista-Controlador).
+- **SistemaDeGestionDeCandidatos.Commands**: Responsable de la lógica relacionada con los comandos del sistema (crear, actualizar, eliminar candidatos), siguiendo el patrón CQRS (Command Query Responsibility Segregation).
 - **SistemaDeGestionDeCandidatos.Data**: Proyecto encargado del acceso a la base de datos y la persistencia de datos.
-- **SistemaDeGestionDeCandidatos.Queries**: Contiene la lógica de consulta (obtener información de candidatos y experiencias) utilizando arquitectura CQRS.
-- **SistemaDeGestionDeCandidatos.Services**: Servicios utilizados en el sistema, incluyendo validaciones y otras operaciones de negocio.
+- **SistemaDeGestionDeCandidatos.Queries**: Contiene la lógica de consulta (obtención de información de candidatos y experiencias) utilizando el patrón CQRS.
+- **SistemaDeGestionDeCandidatos.Services**: ervicios utilizados en el sistema, que incluyen validaciones y otras operaciones relacionadas con la lógica de negocio.
 
 ## Características
 - Crear, editar y eliminar candidatos.
