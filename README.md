@@ -4,10 +4,11 @@
 El Sistema de Gestión de Candidatos es una aplicación web basada en arquitectura MVC con .NET Core y Entity Framework. La aplicación permite la administración de candidatos para un proceso selectivo, gestionando su información y las experiencias laborales asociadas.
 ## Estructura del Proyecto
 
-- **SistemaDeGestionDeCandidatos**: Proyecto principal que incluye la interfaz de usuario y la capa de presentación.
-- **SistemaDeGestionDeCandidatos.Commands**: Encargado de la lógica relacionada con los comandos del sistema (crear, actualizar, eliminar candidatos).
+La estructura del proyecto está enfocado en multicapa con el fin de que puede ser escalable y de facil mantenimiento
+- **SistemaDeGestionDeCandidatos**: Proyecto principal que incluye la interfaz de usuario y la capa de presentación. aqui se utiliza la arquitectura MVC.
+- **SistemaDeGestionDeCandidatos.Commands**: Encargado de la lógica relacionada con los comandos del sistema (crear, actualizar, eliminar candidatos) utilizando arquitectura CQRS.
 - **SistemaDeGestionDeCandidatos.Data**: Proyecto encargado del acceso a la base de datos y la persistencia de datos.
-- **SistemaDeGestionDeCandidatos.Queries**: Contiene la lógica de consulta (obtener información de candidatos y experiencias).
+- **SistemaDeGestionDeCandidatos.Queries**: Contiene la lógica de consulta (obtener información de candidatos y experiencias) utilizando arquitectura CQRS.
 - **SistemaDeGestionDeCandidatos.Services**: Servicios utilizados en el sistema, incluyendo validaciones y otras operaciones de negocio.
 
 ## Características
