@@ -2,6 +2,13 @@
 
 ## Descripción
 El Sistema de Gestión de Candidatos es una aplicación web basada en arquitectura MVC con .NET Core y Entity Framework. La aplicación permite la administración de candidatos para un proceso selectivo, gestionando su información y las experiencias laborales asociadas.
+## Estructura del Proyecto
+
+- **SistemaDeGestionDeCandidatos**: Proyecto principal que incluye la interfaz de usuario y la capa de presentación.
+- **SistemaDeGestionDeCandidatos.Commands**: Encargado de la lógica relacionada con los comandos del sistema (crear, actualizar, eliminar candidatos).
+- **SistemaDeGestionDeCandidatos.Data**: Proyecto encargado del acceso a la base de datos y la persistencia de datos.
+- **SistemaDeGestionDeCandidatos.Queries**: Contiene la lógica de consulta (obtener información de candidatos y experiencias).
+- **SistemaDeGestionDeCandidatos.Services**: Servicios utilizados en el sistema, incluyendo validaciones y otras operaciones de negocio.
 
 ## Características
 - Crear, editar y eliminar candidatos.
@@ -34,7 +41,7 @@ El Sistema de Gestión de Candidatos es una aplicación web basada en arquitectu
    git clone https://github.com/usuario/repo.git
    cd SistemaDeGestionDeCandidatos
 
-####Configurar la base de datos
+#### Configurar la base de datos
 
 - Asegúrate de tener una instancia de SQL Server en ejecución.
 - Actualiza la cadena de conexión en appsettings.json para que coincida con tu entorno de base de datos.
@@ -42,24 +49,23 @@ El Sistema de Gestión de Candidatos es una aplicación web basada en arquitectu
  "ConnectionStrings": {
    "DefaultConnection": "Server=TU_SERVIDOR;Database=TU_BASE_DE_DATOS;User Id=USUARIO;Password=CONTRASEÑA;"
 }
-####dotnet ef database update
+#### Ejecutar las migraciones para la base de datos
 dotnet ef database update
-####Compilar y ejecutar la aplicación
+#### Compilar y ejecutar la aplicación
 dotnet build
 dotnet run
 
-####Uso de la aplicación
+## Uso de la aplicación
 1. Registro de un nuevo candidato:
 
  - Haz clic en el botón "Registrar un nuevo candidato" en la página de inicio.
  - Completa el formulario con los datos del candidato.
 2. Gestión de experiencias:
 
--Haz clic en el botón "Agregar Experiencia" dentro de la tabla de candidatos.
--Completa la información de la experiencia laboral.
+- Haz clic en el botón "Agregar Experiencia" dentro de la tabla de candidatos.
+- Completa la información de la experiencia laboral.
 3. Eliminación de candidatos:
 - Si un candidato tiene experiencias asociadas, se mostrará una advertencia antes de eliminarlo.
-######Estructura del proyecto
 
   
   
