@@ -44,12 +44,29 @@ La estructura del proyecto está enfocada en una arquitectura multicapa, con el 
 
 #### Configurar la base de datos
 
-- Asegúrate de tener una instancia de SQL Server en ejecución.
-- Actualiza la cadena de conexión en appsettings.json para que coincida con tu entorno de base de datos.
+Asegúrate de tener una instancia de SQL Server en ejecución. Sigue estos pasos para configurar la conexión:
 
- "ConnectionStrings": {
-   "DefaultConnection": "Server=TU_SERVIDOR;Database=TU_BASE_DE_DATOS;User Id=USUARIO;Password=CONTRASEÑA;"
-}
+1. **Actualiza la cadena de conexión** en `appsettings.json` para que coincida con tu entorno de base de datos. La configuración debería verse así:
+
+   ```json
+   "ConnectionStrings": {
+     "DefaultConnection": "Server=TU_SERVIDOR;Database=TU_BASE_DE_DATOS;User Id=USUARIO;Password=CONTRASEÑA;"
+   }
+  - ahora si no deseas conectarte a una BD sql server express, puedes utilizar SQL in-memoery, descopmentando  en el archivo Program.cs
+    
+  ```
+// Configuración para SQL In-Memory
+builder.Services.AddDbContext<YourDbContext>(options =>
+    options.UseInMemoryDatabase("GestionCanditadosDb"));
+
+y comentando la seccion
+ ```
+// Configuración para SQL Express (LocalDB)
+
+builder.Services.AddDbContext<YourDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
 #### Ejecutar las migraciones para la base de datos
 dotnet ef database update
 #### Compilar y ejecutar la aplicación
