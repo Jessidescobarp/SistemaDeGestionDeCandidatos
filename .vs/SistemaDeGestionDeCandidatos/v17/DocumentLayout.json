@@ -3,80 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\controllers\\candidateexperiencescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\controllers\\candidateexperiencescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}|SistemaDeGestionDeCandidatos.Tests\\SistemaDeGestionDeCandidatos.Tests.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.tests\\test\\validationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}|SistemaDeGestionDeCandidatos.Tests\\SistemaDeGestionDeCandidatos.Tests.csproj|solutionrelative:sistemadegestiondecandidatos.tests\\test\\validationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\createcandidateexperiencecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|solutionrelative:sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\createcandidateexperiencecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}|SistemaDeGestionDeCandidatos.Tests\\SistemaDeGestionDeCandidatos.Tests.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.tests\\sistemadegestiondecandidatos.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}|SistemaDeGestionDeCandidatos.Tests\\SistemaDeGestionDeCandidatos.Tests.csproj|solutionrelative:sistemadegestiondecandidatos.tests\\sistemadegestiondecandidatos.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\createcandidateexperiencecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|solutionrelative:sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\createcandidateexperiencecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}|SistemaDeGestionDeCandidatos.Tests\\SistemaDeGestionDeCandidatos.Tests.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.tests\\test\\createcandidatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}|SistemaDeGestionDeCandidatos.Tests\\SistemaDeGestionDeCandidatos.Tests.csproj|solutionrelative:sistemadegestiondecandidatos.tests\\test\\createcandidatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\editcandidateexperiencecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|solutionrelative:sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\editcandidateexperiencecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.commands\\commads\\commandscandidate\\createcandidatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|solutionrelative:sistemadegestiondecandidatos.commands\\commads\\commandscandidate\\createcandidatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\controllers\\candidatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\controllers\\candidatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\views\\candidateexperiences\\_createforcandidate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\views\\candidateexperiences\\_createforcandidate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\views\\candidates\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\views\\candidates\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\views\\candidateexperiences\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\views\\candidateexperiences\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\editcandidateexperiencecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|solutionrelative:sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\editcandidateexperiencecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.commands\\commads\\commandscandidate\\editcandidatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|solutionrelative:sistemadegestiondecandidatos.commands\\commads\\commandscandidate\\editcandidatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\views\\candidateexperiences\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\views\\candidateexperiences\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\views\\candidates\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\views\\candidates\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\deletecandidateexperiencecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|solutionrelative:sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\deletecandidateexperiencecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\deletecandidateexperiencecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|solutionrelative:sistemadegestiondecandidatos.commands\\commads\\commandscandidateexperiences\\deletecandidateexperiencecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.commands\\commads\\commandscandidate\\editcandidatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|solutionrelative:sistemadegestiondecandidatos.commands\\commads\\commandscandidate\\editcandidatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos\\views\\candidateexperiences\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}|SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.csproj|solutionrelative:sistemadegestiondecandidatos\\views\\candidateexperiences\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|c:\\users\\jessid.escobar\\source\\repos\\jessidescobarp\\sistemadegestiondecandidatos\\sistemadegestiondecandidatos.commands\\commads\\commandscandidate\\createcandidatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}|SistemaDeGestionDeCandidatos.Commands\\SistemaDeGestionDeCandidatos.Commands.csproj|solutionrelative:sistemadegestiondecandidatos.commands\\commads\\commandscandidate\\createcandidatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,278 +30,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\Candidates\\Index.cshtml",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Views\\Candidates\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\Candidates\\Index.cshtml",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Views\\Candidates\\Index.cshtml",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T22:08:16.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Program.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Program.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Program.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "ValidationServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Tests\\Test\\ValidationServiceTests.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Tests\\Test\\ValidationServiceTests.cs",
+              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Tests\\Test\\ValidationServiceTests.cs",
+              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Tests\\Test\\ValidationServiceTests.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAswDEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T22:00:31.057Z",
+              "WhenOpened": "2024-09-23T00:09:40.917Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateCandidateExperienceCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\CreateCandidateExperienceCommandHandler.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\CreateCandidateExperienceCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\CreateCandidateExperienceCommandHandler.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\CreateCandidateExperienceCommandHandler.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAYwBkAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:56:48.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EditCandidateExperienceCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\EditCandidateExperienceCommandHandler.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\EditCandidateExperienceCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\EditCandidateExperienceCommandHandler.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\EditCandidateExperienceCommandHandler.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T19:18:46.29Z",
+              "Title": "SistemaDeGestionDeCandidatos.Tests",
+              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Tests\\SistemaDeGestionDeCandidatos.Tests.csproj",
+              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Tests\\SistemaDeGestionDeCandidatos.Tests.csproj",
+              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Tests\\SistemaDeGestionDeCandidatos.Tests.csproj",
+              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Tests\\SistemaDeGestionDeCandidatos.Tests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-23T00:07:32.231Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CreateCandidateExperienceCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\CreateCandidateExperienceCommand.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\CreateCandidateExperienceCommand.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\CreateCandidateExperienceCommand.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\CreateCandidateExperienceCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAFAAAA",
+              "Title": "CreateCandidateCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Tests\\Test\\CreateCandidateCommandHandler.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Tests\\Test\\CreateCandidateCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Tests\\Test\\CreateCandidateCommandHandler.cs",
+              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Tests\\Test\\CreateCandidateCommandHandler.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:56:28.026Z",
+              "WhenOpened": "2024-09-23T00:06:40.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CandidateExperiencesController.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Controllers\\CandidateExperiencesController.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Controllers\\CandidateExperiencesController.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Controllers\\CandidateExperiencesController.cs*",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Controllers\\CandidateExperiencesController.cs*",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAjwE4AAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T21:51:13.079Z",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\appsettings.json",
+              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\appsettings.json",
+              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\appsettings.json",
+              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-22T23:42:36.992Z",
               "EditorCaption": ""
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Index.cshtml",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Index.cshtml",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Index.cshtml",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAE8AAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T22:07:30.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EditCandidateExperienceCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\EditCandidateExperienceCommand.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\EditCandidateExperienceCommand.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\EditCandidateExperienceCommand.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\EditCandidateExperienceCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T19:18:30.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_CreateForCandidate.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\_CreateForCandidate.cshtml",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\_CreateForCandidate.cshtml",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\_CreateForCandidate.cshtml",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\_CreateForCandidate.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T22:57:28.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EditCandidateCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\EditCandidateCommandHandler.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\EditCandidateCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\EditCandidateCommandHandler.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\EditCandidateCommandHandler.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T21:46:23.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Edit.cshtml",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Edit.cshtml",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Edit.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T22:08:31.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\Candidates\\Edit.cshtml",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Views\\Candidates\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\Candidates\\Edit.cshtml",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Views\\Candidates\\Edit.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T22:08:42.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DeleteCandidateExperienceCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\DeleteCandidateExperienceCommandHandler.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\DeleteCandidateExperienceCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\DeleteCandidateExperienceCommandHandler.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\DeleteCandidateExperienceCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T19:19:11.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DeleteCandidateExperienceCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\DeleteCandidateExperienceCommand.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\DeleteCandidateExperienceCommand.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\DeleteCandidateExperienceCommand.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidateExperiences\\DeleteCandidateExperienceCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T19:18:59.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EditCandidateCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\EditCandidateCommand.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\EditCandidateCommand.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\EditCandidateCommand.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\EditCandidateCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T21:46:21.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Create.cshtml",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Create.cshtml",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Views\\CandidateExperiences\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T18:57:23.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CreateCandidateCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\CreateCandidateCommand.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\CreateCandidateCommand.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\CreateCandidateCommand.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\CreateCandidateCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:56:00.94Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "06cc7fc7-6f07-4db0-b07f-0dcd0d0d7a20",
-        "Display": 1,
-        "X": -16,
-        "Y": 150,
-        "Width": 1259,
-        "Height": 744,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 269,
-          "SelectedChildIndex": 0,
-          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CreateCandidateCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\CreateCandidateCommandHandler.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\CreateCandidateCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\CreateCandidateCommandHandler.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos.Commands\\Commads\\CommandsCandidate\\CreateCandidateCommandHandler.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAhwB4AAAAMAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Program.cs",
+              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Program.cs",
+              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T22:20:12.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CandidatesController.cs",
-              "DocumentMoniker": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Controllers\\CandidatesController.cs",
-              "RelativeDocumentMoniker": "SistemaDeGestionDeCandidatos\\Controllers\\CandidatesController.cs",
-              "ToolTip": "C:\\Users\\Jessid.Escobar\\source\\repos\\Jessidescobarp\\SistemaDeGestionDeCandidatos\\SistemaDeGestionDeCandidatos\\Controllers\\CandidatesController.cs",
-              "RelativeToolTip": "SistemaDeGestionDeCandidatos\\Controllers\\CandidatesController.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAhwF0AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T21:52:15.966Z",
+              "WhenOpened": "2024-09-22T23:42:33.962Z",
               "EditorCaption": ""
             }
           ]

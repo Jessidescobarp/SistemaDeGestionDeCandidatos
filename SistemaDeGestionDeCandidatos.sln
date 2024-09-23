@@ -5,13 +5,15 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaDeGestionDeCandidatos", "SistemaDeGestionDeCandidatos\SistemaDeGestionDeCandidatos.csproj", "{0AAD5B7B-31DC-4E5E-87BF-1CE7B06611B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaDeGestionDeCandidatos.Services", "SistemaDeGestionDeCandidatos.Services\SistemaDeGestionDeCandidatos.Services.csproj", "{F44EBBB3-43A7-45DA-9370-38A12267BD96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaDeGestionDeCandidatos.Services", "SistemaDeGestionDeCandidatos.Services\SistemaDeGestionDeCandidatos.Services.csproj", "{F44EBBB3-43A7-45DA-9370-38A12267BD96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaDeGestionDeCandidatos.Data", "SistemaDeGestionDeCandidatos.Data\SistemaDeGestionDeCandidatos.Data.csproj", "{CF8438FF-879F-4487-B045-D05D80929BE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaDeGestionDeCandidatos.Data", "SistemaDeGestionDeCandidatos.Data\SistemaDeGestionDeCandidatos.Data.csproj", "{CF8438FF-879F-4487-B045-D05D80929BE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaDeGestionDeCandidatos.Commands", "SistemaDeGestionDeCandidatos.Commands\SistemaDeGestionDeCandidatos.Commands.csproj", "{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaDeGestionDeCandidatos.Commands", "SistemaDeGestionDeCandidatos.Commands\SistemaDeGestionDeCandidatos.Commands.csproj", "{88CD6035-EABB-4A0F-93A3-95DB8DCE3CE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaDeGestionDeCandidatos.Queries", "SistemaDeGestionDeCandidatos.Queries\SistemaDeGestionDeCandidatos.Queries.csproj", "{2C65419C-CE4B-414E-8587-B01EED9F88D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaDeGestionDeCandidatos.Queries", "SistemaDeGestionDeCandidatos.Queries\SistemaDeGestionDeCandidatos.Queries.csproj", "{2C65419C-CE4B-414E-8587-B01EED9F88D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaDeGestionDeCandidatos.Tests", "SistemaDeGestionDeCandidatos.Tests\SistemaDeGestionDeCandidatos.Tests.csproj", "{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2C65419C-CE4B-414E-8587-B01EED9F88D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C65419C-CE4B-414E-8587-B01EED9F88D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C65419C-CE4B-414E-8587-B01EED9F88D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE8ADBB-26AB-45E5-95FA-F14A53FCCE2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

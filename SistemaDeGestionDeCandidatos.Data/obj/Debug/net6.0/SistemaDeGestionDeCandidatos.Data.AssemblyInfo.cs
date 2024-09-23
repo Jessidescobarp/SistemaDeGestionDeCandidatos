@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaDeGestionDeCandidatos.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7abfec6c6e57e9d0ba5e4c62e78237f65255fa76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ad260dbb0c3ba89b46f81e9269c6d704192bda6")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaDeGestionDeCandidatos.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaDeGestionDeCandidatos.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
